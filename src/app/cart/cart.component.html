@@ -6,8 +6,8 @@
 
 <div class="cart-item bg-light p-3" *ngFor="let item of items">
   <h6>My Order</h6>
-  <span>{{ item }}</span>
-  <span class="ml-5"><strong>{{ item | currency }}</strong></span>
+  <span>{{ item.name }}</span>
+  <span class="ml-5"><strong>{{ item.price | currency }}</strong></span>
 </div>
 
  <div class="card pb-5 pl-2">
