@@ -1,5 +1,5 @@
 h3{
-  background-color: #f2f2f2;
+  /* background-color: #c6c3c3; */
   padding: 8px 0;
   color: #55046e;
 }
@@ -17,4 +17,8 @@ color: #55046e;
 button {
   margin-right: 8px;
 
+}
+
+a {
+  text-decoration: none;
 }
