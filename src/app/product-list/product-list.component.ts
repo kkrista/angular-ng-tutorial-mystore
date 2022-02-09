@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { products } from '../products';
-import { faFacebookF, faTwitterSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
+// import { faFacebookF, faTwitterSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faTwitterSquare, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { CartService } from '../cart.service';
 
 @Component({
@@ -15,8 +16,8 @@ faTwitterSquare = faTwitterSquare;
 faInstagram = faInstagram;
 
  products = products;
- items;
- product;
+ items: any;
+ product: any;
 
   constructor(private cartService: CartService) {}
 
@@ -28,7 +29,7 @@ faInstagram = faInstagram;
     window.alert('You will be notified when the product goes on sale');
   }
 
-   addToCart(product) {
+   addToCart(product: any) {
     window.alert('Your product has been added to the cart!');
     this.cartService.addToCart(product);
   }
