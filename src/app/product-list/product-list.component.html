@@ -51,10 +51,8 @@
     </button>
 
     </div>
-  <app-product-alerts
-    [product]="product"
-    (notify)="onNotify()">
-  </app-product-alerts>
+    <app-product-alert [product]="product"
+    (notify)="onNotify()"></app-product-alert>
         <hr>
 
   </div>
