@@ -15,6 +15,7 @@ import { BackbtnComponent } from './backbtn/backbtn.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { CartService } from './cart.service';
 import { BackButtonDirective } from './back-button.directive';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { BackButtonDirective } from './back-button.directive';
     ProductAlertComponent,
     BackbtnComponent,
     ShippingComponent,
-    BackButtonDirective
+    BackButtonDirective,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
