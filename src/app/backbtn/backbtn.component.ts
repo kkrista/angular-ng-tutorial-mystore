@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-backbtn',
@@ -7,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BackbtnComponent implements OnInit {
 
+  faLongArrowAltLeft = faLongArrowAltLeft;
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
-
 }
