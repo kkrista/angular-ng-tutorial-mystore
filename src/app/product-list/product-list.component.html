@@ -25,24 +25,24 @@
    </p>
 
 
-     <button class="btn btn-dark btn-sm mr-2" style="font-size:20px" (click)="share()">
+     <button class="btn btn-dark btn-sm mr-2" style="font-size:16px" (click)="share()">
      <fa-icon [icon]="faFacebookF"></fa-icon>
    </button>
-   <button class="btn btn-dark btn-sm mr-2" style="font-size:20px" (click)="share()">
+   <button class="btn btn-dark btn-sm mr-2" style="font-size:16px" (click)="share()">
     <fa-icon [icon]="faTwitterSquare"></fa-icon>
    </button>
-     <button class="btn btn-dark btn-sm mr-2" style="font-size:20px" (click)="share()">
+     <button class="btn btn-dark btn-sm mr-2" style="font-size:16px" (click)="share()">
     <fa-icon [icon]="faInstagram"></fa-icon>
    </button>
 
-    <button class="btn btn-dark ml-4" style="font-size:18px" (click)="addToCart(product)" >
+    <button class="btn btn-dark ml-4" style="font-size:15px" (click)="addToCart(product)" >
     Buy Now
    </button>
 
    </div>
-   <app-product-alert [product]="product"
+   <app-product-alert  [product]="product"
    (notify)="onNotify()"></app-product-alert>
-       <hr>
+
 
  </div>
 
