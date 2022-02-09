@@ -1,5 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -8,6 +12,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { CartComponent } from './cart/cart.component';
 import { ProductAlertComponent } from './product-alert/product-alert.component';
 import { BackbtnComponent } from './backbtn/backbtn.component';
+import { ShippingComponent } from './shipping/shipping.component';
+import { CartService } from './cart.service';
 
 @NgModule({
   declarations: [
@@ -17,13 +23,22 @@ import { BackbtnComponent } from './backbtn/backbtn.component';
     ProductDetailsComponent,
     CartComponent,
     ProductAlertComponent,
-    BackbtnComponent
+    BackbtnComponent,
+    ShippingComponent
   ],
   imports: [
-    BrowserModule
-
+    BrowserModule,
+    ReactiveFormsModule,
+    FontAwesomeModule,
+    HttpClientModule,
+       RouterModule.forRoot([
+      { path: '', component: ProductListComponent },
+      { path: 'products/:productId', component: ProductDetailsComponent },
+      { path: 'cart', component: CartComponent },
+      { path: 'shipping', component: ShippingComponent },
+    ])
   ],
-  providers: [],
+  providers: [CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
