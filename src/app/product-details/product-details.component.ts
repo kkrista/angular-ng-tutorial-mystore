@@ -11,7 +11,7 @@ import { CartService } from '../cart.service';
 })
 export class ProductDetailsComponent implements OnInit {
 products = products;
-  product: { name: string; price: number; short_desription: string; description: string; short_description: string; imgUrl: string; } | { name: string; price: number; short_description: string; imgUrl: string; description: string; short_desription?: undefined; } | undefined;
+  product: any
 
   constructor(private route: ActivatedRoute, private cartService: CartService) {  }
 
@@ -29,6 +29,7 @@ products = products;
   }
 
 }
+
 function get(arg0: string) {
   throw new Error('Function not implemented.');
 }
