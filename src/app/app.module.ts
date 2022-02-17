@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
@@ -16,6 +17,8 @@ import { ShippingComponent } from './shipping/shipping.component';
 import { CartService } from './cart.service';
 import { BackButtonDirective } from './back-button.directive';
 import { FooterComponent } from './footer/footer.component';
+import { AppRoutingModule } from './app-routing-module';
+
 
 @NgModule({
   declarations: [
@@ -28,19 +31,21 @@ import { FooterComponent } from './footer/footer.component';
     BackbtnComponent,
     ShippingComponent,
     BackButtonDirective,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     FontAwesomeModule,
     HttpClientModule,
-       RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-      { path: 'products/:productId', component: ProductDetailsComponent },
-      { path: 'cart', component: CartComponent },
-      { path: 'shipping', component: ShippingComponent },
-    ])
+    AppRoutingModule
+    //    RouterModule.forRoot([
+    //   { path: 'products/:productId', component: ProductDetailsComponent },
+    //   { path: '', component: ProductListComponent },
+    //   { path: 'products/:productId', component: ProductDetailsComponent },
+    //   { path: 'cart', component: CartComponent },
+    //   { path: 'shipping', component: ShippingComponent },
+    // ])
   ],
   providers: [CartService],
   bootstrap: [AppComponent]
