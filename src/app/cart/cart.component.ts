@@ -9,7 +9,7 @@ import { CartService } from '../cart.service';
 })
 export class CartComponent implements OnInit {
 
- items: any;
+ items;
  checkoutForm;
 
   constructor(private cartService: CartService, private formBuilder: FormBuilder) {

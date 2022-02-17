@@ -1,6 +1,13 @@
+export interface Product {
+  id: number;
+  name: string;
+  price: number;
+  description: string;
+}
 
 export const products = [
   {
+    id:0,
     name: 'iPhone X 256 GB',
     price: 1729,
     short_desription:'Phone X features an all-screen design with a 5.8-inch Super Retina HD display with HDR and True Tone... more ',
@@ -12,6 +19,7 @@ export const products = [
     imgUrl: 'https://thegoodguys.sirv.com/products/50050727/50050727_535681.PNG?scale.height=505&scale.width=773&canvas.height=505&canvas.width=773&canvas.opacity=0&format=png&png.optimize=true'
   },
   {
+    id: 1,
     name: 'Samsung Galaxy S10 Plus 128GB Prism Green ',
     price: 1497,
     short_description: 'This prism green Samsung Galaxy S10 Plus has a 6.4 inch Quad HD Infinity-O display so videos, shows ...more',
@@ -20,6 +28,7 @@ export const products = [
       description: 'This prism green Samsung Galaxy S10 Plus has a 6.4 inch Quad HD Infinity-O display so videos, shows, photos and movies fill the front of the phone for a cinematic experience(1). The Quad HD Plus resolution gives you exceptional picture quality, and HDR10 Plus Dynamic Tone Mapping recreates HDR10 Plus content with lifelike brilliance(2). Samsung DeX is built in so reviewing documents, watching videos and using apps on a bigger screen is easy - just use a USB-C to HDMI cable (sold separately) to connect the Samsung Galaxy S10 Plus to a compatible monitor for a PC-like experience; no computer needed(3). The Pro-grade camera gives you a full kit of lenses and an intelligent photo assistant to make taking professional-grade photos and videos easy(4), and ultrasonic in-display wave technology reads your fingerprints unique ridges so only you can unlock your phone. The 4100 mAh battery has intelligent technology that uses power efficiently, giving you a long-lasting battery(5) and a new superpower - you can share battery power wirelessly with someone else when their battery needs a boost; no wires or plugs needed(6). (1)Display size measured diagonally as a full rectangle without accounting for rounded corners. (2)HDR10 Plus content required. (3)Samsung DeX requires compatible monitor and USB-C to HDMI cable, sold separately. (4) Accuracy of Intelligent Camera may vary depending on shooting conditions, including type of scenery, number and movement of subjects, and amount of focus. (5)Battery capacity value of a typical user. Based upon independent third party testing. Rated (i.e. minimum) battery capacity value is 4,000 mAh. Actual battery capacity value may vary. Actual battery life varies by network environment, features and apps used, frequency of calls and messages, number of times charged, and many other factors. Please see user manual for instructions on how to care for the battery and achieve optimum battery life. (6)Compatible with devices that support WPC Qi wireless charging. Requires at least 30% battery life on Galaxy S10.',
   },
   {
+    id: 2,
     name: 'Apple iPhone 7 256GB - Gold',
     price: 1099,
     short_description: 'iPhone 7 features an all-new 12-megapixel camera with an /1.8 aperture for great ...more ',
