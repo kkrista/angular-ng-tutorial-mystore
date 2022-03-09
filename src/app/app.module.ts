@@ -17,7 +17,6 @@ import { ShippingComponent } from './shipping/shipping.component';
 import { CartService } from './cart.service';
 import { BackButtonDirective } from './back-button.directive';
 import { FooterComponent } from './footer/footer.component';
-import { AppRoutingModule } from './app-routing-module';
 
 
 @NgModule({
@@ -38,14 +37,12 @@ import { AppRoutingModule } from './app-routing-module';
     ReactiveFormsModule,
     FontAwesomeModule,
     HttpClientModule,
-    AppRoutingModule
-    //    RouterModule.forRoot([
-    //   { path: 'products/:productId', component: ProductDetailsComponent },
-    //   { path: '', component: ProductListComponent },
-    //   { path: 'products/:productId', component: ProductDetailsComponent },
-    //   { path: 'cart', component: CartComponent },
-    //   { path: 'shipping', component: ShippingComponent },
-    // ])
+       RouterModule.forRoot([
+      { path: '', component: ProductListComponent },
+      { path: 'products/:productId', component: ProductDetailsComponent },
+      { path: 'cart', component: CartComponent },
+      { path: 'shipping', component: ShippingComponent },
+    ])
   ],
   providers: [CartService],
   bootstrap: [AppComponent]
